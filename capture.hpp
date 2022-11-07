@@ -880,10 +880,6 @@ public:
 };
 
 
-
-
-
-
 struct DESKTOPCAPTUREPARAMS
 {
     bool HasVideo = 1;
@@ -1268,7 +1264,6 @@ int DesktopCapture(DESKTOPCAPTUREPARAMS& dp)
     EnumVistaMixers();
 
 
-
 /*    if (dp.HasAudio)
     {
         VM::EnumVistaMixers();
@@ -1330,6 +1325,8 @@ int DesktopCapture(DESKTOPCAPTUREPARAMS& dp)
         if (dp.rx.left < 0 || dp.rx.right < 0)
             dp.rx = {};
     }
+
+    OutputDebugStringA("Capture-01");
 
     CComPtr<IMMDeviceEnumerator> deviceEnumerator = 0;
     if(dp.HasAudio)
@@ -1963,6 +1960,7 @@ int DesktopCapture(DESKTOPCAPTUREPARAMS& dp)
                 break;
 
             memcpy(pData, cap.buf.data(), min(cap.buf.size(),VideoBufferSize));
+            OutputDebugStringA(":");
             if (dp.Framer)
                 hrf = dp.Framer(cap.buf.data(), min(cap.buf.size(),VideoBufferSize),dp.cb);
 
