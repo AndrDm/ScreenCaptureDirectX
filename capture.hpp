@@ -1250,6 +1250,7 @@ int DesktopCapture(DESKTOPCAPTUREPARAMS& dp)
                 if (!Capturing)
                     break;
                 auto hr = cap->GetBuffer(&pData, &framesAvailable, &flags, &up, &uq);
+                OutputDebugStringA(".");
                 if (FAILED(hr))
                     break;
                 if (framesAvailable == 0)

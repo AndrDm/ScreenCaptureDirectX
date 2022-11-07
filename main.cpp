@@ -10,7 +10,9 @@ int wmain()
 	DESKTOPCAPTUREPARAMS dp;
 
 	// To Video
-	dp.VIDEO_ENCODING_FORMAT = MFVideoFormat_H265;
+	//dp.VIDEO_ENCODING_FORMAT = MFVideoFormat_H265;
+	dp.VIDEO_ENCODING_FORMAT = MFVideoFormat_HEVC;
+	dp.HasAudio = 0;
 	dp.f = L"capture.mp4";
 
 	// To Stream
