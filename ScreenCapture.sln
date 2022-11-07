@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29709.97
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScreenCapture", "ScreenCapture.vcxproj", "{8977CEFB-978B-4B5C-943D-75C312B7F72D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LV_ScreenCapture", "LV_ScreenCapture.vcxproj", "{508A2208-A6B3-4943-8306-5C66E69C2FEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{8977CEFB-978B-4B5C-943D-75C312B7F72D}.Release|x64.Build.0 = Release|x64
 		{8977CEFB-978B-4B5C-943D-75C312B7F72D}.Release|x86.ActiveCfg = Release|Win32
 		{8977CEFB-978B-4B5C-943D-75C312B7F72D}.Release|x86.Build.0 = Release|Win32
+		{508A2208-A6B3-4943-8306-5C66E69C2FEB}.Debug|x64.ActiveCfg = Debug|x64
+		{508A2208-A6B3-4943-8306-5C66E69C2FEB}.Debug|x64.Build.0 = Debug|x64
+		{508A2208-A6B3-4943-8306-5C66E69C2FEB}.Debug|x86.ActiveCfg = Debug|Win32
+		{508A2208-A6B3-4943-8306-5C66E69C2FEB}.Debug|x86.Build.0 = Debug|Win32
+		{508A2208-A6B3-4943-8306-5C66E69C2FEB}.Release|x64.ActiveCfg = Release|x64
+		{508A2208-A6B3-4943-8306-5C66E69C2FEB}.Release|x64.Build.0 = Release|x64
+		{508A2208-A6B3-4943-8306-5C66E69C2FEB}.Release|x86.ActiveCfg = Release|Win32
+		{508A2208-A6B3-4943-8306-5C66E69C2FEB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
